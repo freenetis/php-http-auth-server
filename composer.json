@@ -1,0 +1,25 @@
+{
+    "name": "php-http-auth/php-http-auth-server",
+    "type": "library",
+    "description": "PHP library for easy server side implementation of multiple types of HTTP authentication",
+    "version": "0.1.0",
+    "keywords": ["HTTP authentication", "HTTP basic authentication", "HTTP digest authentication"],
+    "license": ["GPL-3.0"],
+    "homepage": "https://github.com/freenetis/php-http-auth-server",
+    "authors": [
+        {
+            "name": "Ondřej Fibich",
+            "email": "fibich@freenetis.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+	"autoload": {
+		"classmap": ["src/"],
+		"files": ["src/loader.php"]
+	}
+}

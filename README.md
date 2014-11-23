@@ -1,5 +1,5 @@
-PHPAX-RS
-========
+PHP-HTTP-Auth-server
+====================
 
 [![Build Status](https://api.travis-ci.org/freenetis/php-http-auth-server.svg?branch=master)](https://travis-ci.org/freenetis/php-http-auth-server)
 

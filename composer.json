@@ -18,8 +18,8 @@
     "require-dev": {
         "phpunit/phpunit": "4.0.*"
     },
-	"autoload": {
-		"classmap": ["src/"],
-		"files": ["src/loader.php"]
-	}
+    "autoload": {
+        "classmap": ["src/"],
+        "files": ["src/loader.php"]
+    }
 }

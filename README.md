@@ -29,10 +29,10 @@ class MySimpleAccountManager implements \phphttpauthserver\IAccountManager {
     );
     
     public function getUserPassword($username) {
-    	if (!array_key_exists($username, self::$users)) {
-    		return FALSE;
-    	}
-    	return self::$users[$username];
+        if (!array_key_exists($username, self::$users)) {
+            return FALSE;
+        }
+        return self::$users[$username];
     }
     
 }
@@ -60,17 +60,17 @@ Example of performing authentication with the created service:
 ```php
 $response = $service->auth();
 if ($response->isPassed()) {
-	echo 'logged in as ' . $response->getUsername();
+    echo 'logged in as ' . $response->getUsername();
 } else {
-	$errors = implode("\n", $response->getErrors());
-	if (headers_send()) {
-		die('Authorization Required: ' . $errors);
-	}
-	header('HTTP/1.0 401 Authorization Required');
-	foreach ($response->getHeaders() as $key => $value) {
-		header($key . ': ' . $value);
-	}
-	die($errors);
+    $errors = implode("\n", $response->getErrors());
+    if (headers_send()) {
+        die('Authorization Required: ' . $errors);
+    }
+    header('HTTP/1.0 401 Authorization Required');
+    foreach ($response->getHeaders() as $key => $value) {
+        header($key . ': ' . $value);
+    }
+    die($errors);
 }
 
 ```

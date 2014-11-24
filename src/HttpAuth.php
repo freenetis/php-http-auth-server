@@ -20,7 +20,7 @@ abstract class HttpAuth {
     /**
      * Library version.
      */
-    const VERSION = '0.1.0';
+    const VERSION = '0.1.1';
 
     /**
      * Available HttpAuth types that implements HttpAuth.

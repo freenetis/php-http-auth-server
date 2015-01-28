@@ -107,7 +107,6 @@ class DigestHttpAuth extends HttpAuth {
                 $data, $requestMethod, $userPassword);
         // check client response
         if ($data['response'] != $validResponse) {
-            echo $requestMethod . ' ' . $data['response'] . '!=' . $validResponse . "\n";
             return $response->addError('Wrong Credentials');
         }
         // auth success
